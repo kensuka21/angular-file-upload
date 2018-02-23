@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-toastr": "^2.1.1",
     "blueimp-file-upload": "^9.21.0",
     "bootstrap3": "^3.3.5",
     "express": "^4.16.2",
@@ -21,6 +23,7 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.0.0",
-    "gulp-css": "^0.1.0"
+    "gulp-css": "^0.1.0",
+    "gulp-image": "^4.3.0"
   }
 }
