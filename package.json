@@ -1,0 +1,26 @@
+{
+  "name": "angular-file-upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "author": "Kenji Mukai <kensuka21@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "blueimp-file-upload": "^9.21.0",
+    "bootstrap3": "^3.3.5",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1",
+    "jquery-ui-dist": "^1.12.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-css": "^0.1.0"
+  }
+}
