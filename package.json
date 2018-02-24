@@ -5,7 +5,8 @@
   "main": "server",
   "scripts": {
     "test": "karma start",
-    "build": "gulp build"
+    "build": "gulp build",
+    "start": "node server.js"
   },
   "author": "Kenji Mukai <kensuka21@gmail.com>",
   "license": "ISC",
