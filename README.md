@@ -11,3 +11,9 @@ $ npm install
 $ npm start
 ```
 Now the application is running in http://localhost:5000/
+
+
+#### Run Tests
+```sh
+$ npm test
+```
