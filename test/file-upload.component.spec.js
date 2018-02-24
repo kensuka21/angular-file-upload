@@ -3,15 +3,17 @@ describe('File Upload Component', function () {
         $rootScope,
         $controller,
         $httpBackend,
+        $componentController,
         apiPassword;
 
     beforeEach(module('angular-file-upload'));
 
-    beforeEach(inject(function (_$compile_, _$rootScope_, _$controller_, $injector, password) {
+    beforeEach(inject(function (_$compile_, _$rootScope_, _$controller_, $injector, _$componentController_, password) {
         $compile = _$compile_;
         $rootScope = _$rootScope_;
         $controller = _$controller_;
         $httpBackend = $injector.get('$httpBackend');
+        $componentController = _$componentController_;
         apiPassword = password;
     }));
 
@@ -26,7 +28,7 @@ describe('File Upload Component', function () {
     it('When execute fileuploadadd event should clear video list in queue', function () {
         var data = { scope: { queue: [{}] } };
         scope = $rootScope.$new();
-        controller = $controller('FileUploadController', {
+        controller = $componentController('ngFileUpload', {
             $scope: scope
         });
 
@@ -49,7 +51,7 @@ describe('File Upload Component', function () {
         var data = { scope: { queue: [{}] }, result: { hashed_id: '' } };
 
         scope = $rootScope.$new();
-        controller = $controller('FileUploadController', {
+        controller = $componentController('ngFileUpload', {
             $scope: scope
         });
 

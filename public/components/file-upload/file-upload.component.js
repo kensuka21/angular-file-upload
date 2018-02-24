@@ -1,6 +1,5 @@
 (function () {
 	angular.module('angular-file-upload')
-		.controller('FileUploadController', FileUploadController)
 		.component('ngFileUpload', {
 			templateUrl: 'components/file-upload/file-upload.component.html',
 			controller: FileUploadController,

@@ -30,7 +30,8 @@ module.exports = function(config) {
       './node_modules/blueimp-file-upload/js/jquery.fileupload-angular.js',
       './node_modules/angular-animate/angular-animate.min.js',
       './node_modules/angular-toastr/dist/angular-toastr.tpls.min.js',
-      './public/**/*.js'      
+      './public/**/*.js',
+      './test/**/*.js'
     ],
 
 
