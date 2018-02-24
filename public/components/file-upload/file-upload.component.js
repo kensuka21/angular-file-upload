@@ -1,8 +1,10 @@
 (function () {
-	angular.module('angular-file-upload').component('ngFileUpload', {
-		templateUrl: 'components/file-upload/file-upload.component.html',
-		controller: FileUploadController,
-	});
+	angular.module('angular-file-upload')
+		.controller('FileUploadController', FileUploadController)
+		.component('ngFileUpload', {
+			templateUrl: 'components/file-upload/file-upload.component.html',
+			controller: FileUploadController,
+		});
 
 	function FileUploadController($scope, fileUpload, url,
 		mediaUrl, password, namePrefix, embededUrl, $http, toastr, $timeout, $sce) {
