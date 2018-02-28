@@ -17,15 +17,14 @@ describe('File Upload Component', function () {
         apiPassword = password;
     }));
 
-
-    it('FIle Upload Component should be defined', function () {
+    it('File Upload Component should be defined', function () {
         var element = angular.element('<ng-file-upload></ng-file-upload>');
         var scope = $rootScope.$new();
         var component = $compile(element)(scope);
         expect(component).toBeDefined();
     });
 
-    it('When execute fileuploadadd event should clear video list in queue', function () {
+    it('When execute "fileuploadadd" event should clear video list in queue', function () {
         var data = { scope: { queue: [{}] } };
         scope = $rootScope.$new();
         controller = $componentController('ngFileUpload', {
@@ -38,7 +37,7 @@ describe('File Upload Component', function () {
         expect(scope.showVideoThumbnailPreview).toEqual(false);
     });
 
-    it('When execute fileuploaddone event should get the video', function () {
+    it('When execute "fileuploaddone" event should get the video', function () {
         var expectedData = [
             {
                 progress: 100,
