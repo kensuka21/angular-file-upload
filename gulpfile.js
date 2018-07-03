@@ -58,6 +58,6 @@ gulp.task('image', function () {
     gulp.src(config.paths.image)
       .pipe(image())
       .pipe(gulp.dest(config.paths.dist + '/blueimp-file-upload/img'));
-  });
+});
 
 gulp.task('build', ['scripts', 'html', 'css', 'image']);
